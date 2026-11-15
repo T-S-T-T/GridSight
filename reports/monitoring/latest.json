@@ -1,0 +1,50 @@
+[
+  {
+    "name": "data_freshness",
+    "ok": true,
+    "value": 1382032.3465728334,
+    "threshold": "lag <= 3650D",
+    "action": "alert; dashboard shows a stale banner",
+    "detail": "latest interval 2024-03-30 13:55:00+00:00"
+  },
+  {
+    "name": "feature_drift",
+    "ok": false,
+    "value": 8.36360433184628,
+    "threshold": "PSI <= 0.2",
+    "action": "alert and trigger an early retrain",
+    "detail": "12 drifted; worst doy_cos"
+  },
+  {
+    "name": "live_accuracy_demand",
+    "ok": true,
+    "value": null,
+    "threshold": "n/a",
+    "action": "none",
+    "detail": "no settled predictions yet"
+  },
+  {
+    "name": "coverage_demand",
+    "ok": true,
+    "value": null,
+    "threshold": "n/a",
+    "action": "none",
+    "detail": "no settled intervals yet"
+  },
+  {
+    "name": "live_accuracy_price",
+    "ok": true,
+    "value": null,
+    "threshold": "n/a",
+    "action": "none",
+    "detail": "no settled predictions yet"
+  },
+  {
+    "name": "coverage_price",
+    "ok": true,
+    "value": null,
+    "threshold": "n/a",
+    "action": "none",
+    "detail": "no settled intervals yet"
+  }
+]
