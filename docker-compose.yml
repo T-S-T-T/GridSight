@@ -1,0 +1,25 @@
+# Full stack: API, dashboard and a worker that ingests and scores every 5 minutes.
+# First run (offline demo data):  docker compose run --rm worker gridsight demo
+services:
+  api:
+    build: .
+    command: gridsight serve --host 0.0.0.0 --port 8000
+    ports: ["8000:8000"]
+    volumes: [gridsight-data:/data]
+    restart: unless-stopped
+  dashboard:
+    build: .
+    command: streamlit run dashboard/app.py --server.address 0.0.0.0 --server.port 8501
+    ports: ["8501:8501"]
+    volumes: [gridsight-data:/data]
+    restart: unless-stopped
+  worker:
+    build: .
+    command: gridsight loop --every 300
+    env_file:
+      - path: .env
+        required: false
+    volumes: [gridsight-data:/data]
+    restart: unless-stopped
+volumes:
+  gridsight-data:

@@ -1,0 +1,5 @@
+{"latitude": -34.93, "longitude": 138.6, "timezone": "GMT", "hourly_units": {"time": "iso8601", "temperature_2m": "°C", "wind_speed_100m": "km/h"},
+ "hourly": {"time": ["2024-01-15T00:00", "2024-01-15T01:00", "2024-01-15T02:00"],
+            "temperature_2m": [24.1, 26.3, 28.0], "relative_humidity_2m": [40, 35, 30],
+            "shortwave_radiation": [600.0, 750.0, 880.0], "cloud_cover": [10, 5, 0],
+            "wind_speed_100m": [36.0, 18.0, null]}}

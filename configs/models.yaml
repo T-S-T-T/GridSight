@@ -1,0 +1,20 @@
+# Model settings. Horizons are in 30-minute steps.
+horizons:
+  demand: [1, 2, 4, 8, 16, 48, 96, 336]
+  price: [1, 2, 4, 8, 16, 48, 96]
+quantiles: [0.1, 0.5, 0.9]
+lightgbm:
+  n_estimators: 400
+  learning_rate: 0.05
+  num_leaves: 31
+  min_child_samples: 20
+  subsample: 0.8
+  subsample_freq: 1
+  colsample_bytree: 0.8
+  verbose: -1
+backtest:
+  n_folds: 6
+  fold_days: 60
+  gap_days: 7
+  min_train_days: 180
+conformal_alpha: 0.2

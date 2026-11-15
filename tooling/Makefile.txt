@@ -1,0 +1,39 @@
+# Convenience targets. On Windows without make, run the same `gridsight ...` commands directly.
+.PHONY: setup test lint demo backfill ingest features train evaluate battery serve dashboard
+
+setup:
+	pip install -e ".[dev]"
+	pre-commit install
+
+test:
+	pytest --cov
+
+lint:
+	ruff check src tests
+
+demo:
+	gridsight demo
+
+backfill:
+	gridsight backfill --start 2021-10 --end 2026-10
+
+ingest:
+	gridsight ingest-live
+
+features:
+	gridsight features
+
+train:
+	gridsight train
+
+evaluate:
+	gridsight evaluate
+
+battery:
+	gridsight battery
+
+serve:
+	uvicorn gridsight.api.app:app --reload --port 8000
+
+dashboard:
+	streamlit run dashboard/app.py

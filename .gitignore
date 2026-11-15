@@ -179,3 +179,13 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+# ---- GridSight ----
+data/
+mlruns/
+mlartifacts/
+reports/*.parquet
+reports/figures/
+*.duckdb
+*.duckdb.wal
+.ruff_cache/
+.mypy_cache/

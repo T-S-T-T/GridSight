@@ -1,0 +1,12 @@
+# Simulated grid battery used to value the price forecasts.
+region: SA1
+power_mw: 100
+energy_mwh: 200
+soc_min_mwh: 20
+soc_max_mwh: 200
+soc_initial_mwh: 100
+eta_charge: 0.92
+eta_discharge: 0.92
+degradation_aud_per_mwh: 10
+horizon_hours: 48
+step_minutes: 30

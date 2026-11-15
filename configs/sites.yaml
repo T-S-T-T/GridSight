@@ -1,0 +1,16 @@
+# Weather site coordinates (decimal degrees).
+sites:
+  sydney: {lat: -33.87, lon: 151.21}
+  newcastle: {lat: -32.93, lon: 151.78}
+  wollongong: {lat: -34.42, lon: 150.89}
+  canberra: {lat: -35.28, lon: 149.13}
+  brisbane: {lat: -27.47, lon: 153.03}
+  gold_coast: {lat: -28.02, lon: 153.40}
+  townsville: {lat: -19.26, lon: 146.82}
+  melbourne: {lat: -37.81, lon: 144.96}
+  geelong: {lat: -38.15, lon: 144.36}
+  ballarat: {lat: -37.56, lon: 143.85}
+  adelaide: {lat: -34.93, lon: 138.60}
+  mount_gambier: {lat: -37.83, lon: 140.78}
+  hobart: {lat: -42.88, lon: 147.33}
+  launceston: {lat: -41.43, lon: 147.14}
