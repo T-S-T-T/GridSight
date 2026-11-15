@@ -1,0 +1,7 @@
+name,ok,value,threshold,action,detail
+data_freshness,True,1382032.3465728334,lag <= 3650D,alert; dashboard shows a stale banner,latest interval 2024-03-30 13:55:00+00:00
+feature_drift,False,8.36360433184628,PSI <= 0.2,alert and trigger an early retrain,12 drifted; worst doy_cos
+live_accuracy_demand,True,,n/a,none,no settled predictions yet
+coverage_demand,True,,n/a,none,no settled intervals yet
+live_accuracy_price,True,,n/a,none,no settled predictions yet
+coverage_price,True,,n/a,none,no settled intervals yet
